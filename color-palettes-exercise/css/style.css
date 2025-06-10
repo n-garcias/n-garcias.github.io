@@ -1,0 +1,92 @@
+#cp1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#cp1-a {
+    background: #f7accf;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#cp1-b {
+    background: #392759;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#cp1-c {
+    background: #E8F0FF;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#cp2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#cp2-a {
+    background: #ba3030;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    padding: 24px;
+}
+
+#cp2-b {
+    background: #4496ee;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    padding: 24px;
+}
+
+#cp2-c {
+    background: #cdc5b4;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    padding: 24px;
+}
+
+#cp3 {
+    font-family: fantasy;
+    text-align: left;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#cp3-a {
+    background: #7a5c58;
+    color: black;
+    font-family: fantasy;
+    text-align: left;
+    padding: 24px;
+}
+
+#cp3-b {
+    background: #8d80ad;
+    color: black;
+    font-family: fantasy;
+    text-align: left;
+    padding: 24px;
+}
+
+#cp3-c {
+    background: #99b2dd;
+    color: black;
+    font-family: fantasy;
+    text-align: left;
+    padding: 24px;
+}
