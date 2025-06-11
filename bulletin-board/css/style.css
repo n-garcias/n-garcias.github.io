@@ -1,0 +1,52 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Bulletin Board assignment.
+
+    Good luck, and have fun!
+*/
+
+img {
+    width: 150px;
+}
+
+#cat {
+    width: 200px;
+}
+
+.post-it {
+    background-color: #FDE74C;
+    display: inline-block;
+    margin: 24px;
+    padding: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 250px;
+    height: 250px;
+}
+
+#green {
+    background: #ABC96A;
+}
+
+#yellow {
+    height: 300px;
+}
+
+#blue {
+    background-color: #C9D7EE;
+}
+
+#pink {
+    background-color: #F3CCED;
+    height: 230px;
+}
+
+#beige {
+    background-color: #E3E7D3;
+    height: 230px;
+    text-align: center;
+    position: relative;
+}
+
