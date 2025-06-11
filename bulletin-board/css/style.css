@@ -24,6 +24,7 @@ img {
         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 250px;
     height: 250px;
+    box-shadow: 4px 4px 4px #00000033;
 }
 
 #green {
