@@ -1,3 +1,36 @@
 div {
-    border: 10px dashed orange; 
+    border: 10px dashed #ccaadd;
+    /* 
+        margin/padding shorthand rules: 
+
+        one value margin: targets all four sides of an element.
+
+        two value margin: the 1st value targets the top and the bottom,
+        the second value targets the left and the right.
+
+        three value margin: first value targets the top, second value targets
+        the left and the right, third value targets the bottom
+
+        four value margin: 1st value targets the top, 2nd targets the right,
+        3rd value targets the bottom, 4th value targets the left
+    */
+    margin: 24px auto; 
+    padding: 24px 36px;
+    background-color: lavender;
+    width: 50%;
+}
+
+p {
+    background-color: pink;
+    width: 200px;
+    padding: 25px;
+    border: 2px solid red;
+    text-align: center;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    /* some extra stuff */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
