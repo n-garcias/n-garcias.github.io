@@ -20,7 +20,8 @@ img {
     display: inline-block;
     margin: 24px;
     padding: 24px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    font-family: 
+        'Lucida Sans', 'Lucida Sans Regular', 
         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 250px;
     height: 250px;
@@ -50,4 +51,3 @@ img {
     text-align: center;
     position: relative;
 }
-
