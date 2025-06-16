@@ -1,0 +1,51 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+
+.frame {
+   margin: 30px 30px 30px;
+   border: 3px ridge #20130D;
+   box-shadow: 2px 2px 2px grey;
+   display: inline-block;
+   width: 130px;
+   vertical-align: top;
+}
+
+.frame div {
+    background-color: beige;
+    padding: 3px;
+    box-shadow: inset 2px 2px 3px grey;
+}
+
+.frame img {
+    width: 100%;
+    display: block;
+}
+
+.multi-row {
+    display: inline-block;
+    margin-top: 31px;
+}
+
+.multi-row .frame {
+    display: block;
+}
+
+#medium {
+    margin-top: 80px;
+}
+
+#long {
+    margin-top: 60px;
+}
+
+#text {
+    font-size: 10px;
+    text-align: center;
+}
+
