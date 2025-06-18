@@ -12,13 +12,17 @@ body {
     text-align: center;
 }
 #triple-colombe {
-    width: 100%;
+    width: 500px;
     object-fit: cover;
 }
 #can {
-    width: 100%;
+    width: 600px;
     transform: rotate(5deg);
     object-fit: cover;
+    transition: transform 2s;
+}
+#can:hover {
+    transform: rotate(-5deg);
 }
 .container-1 {
     background-color: beige;
