@@ -11,15 +11,18 @@ body {
     display: flex;
     width: 85%;
     padding: 24px;
-    margin: 0px auto;
+    margin: 0px auto 0px;
+    background-color: white;
 }
 #sidebar {
     padding: 24px;
     width: 200px;
+    border: 0.5px solid black;
+    height: max-content;
 }
 #main {
     flex: 1;
-    padding-left: 15px;
+    padding-left: 24px;
 }
 #content {
     display: flex;
@@ -30,15 +33,27 @@ body {
     border: 0.5px solid black;
     height: max-content;
 }
-/*  flexbox css rules end */
+#characteristics-container {
+    display: flex;
+}
+#characteristics-images {
+    margin: 10px;
+    height: max-content;
+    background-color: rgb(237, 235, 235);
+}
 
+/*  flexbox css rules end */
+body {
+    background-color: rgb(243, 243, 243);
+}
 #sidebar h3 {
-    border-bottom: 0.5px solid hotpink;
+    border-bottom: 0.5px solid black;
     padding-bottom: 8px;
 }
 #sidebar ul {
     list-style-type: none;
     padding: 0px;
+    line-height: 1.5;
 }
 #sidebar ul a {
     color: blue;
@@ -47,7 +62,7 @@ body {
 #caption {
     font-size: 12px;
 }
-#image img {
+img {
     width: 200px;
 }
 h2 {
@@ -72,4 +87,8 @@ h3 {
 }
 #species-name {
     text-align: center;
+}
+#characteristics-images {
+    border: 0.5px solid black;
+    padding: 10px;
 }
