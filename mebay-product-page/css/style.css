@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+h1 {
+    text-align: center;
+    border-bottom: 0.5px solid black;
+    padding: 12px;
+}
+#product-title {
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+#main-container {
+    display: flex;
+    margin: 0px auto;
+    width: 85%;
+    justify-content: center;
+}
+#left-column-pictures {
+    width: 100px;
+    margin: 12px;
+}
+#middle-column-product {
+    width: 500px;
+    margin: 12px;
+}
+#middle-column-product img {
+    width: 100%;
+}
+#right-column-info {
+    width: 500px;
+    margin: 12px;
+    max-width: max-content;
+}
+#right-column-info span {
+    border: 0.5px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#buy-button {
+    color: white;
+    background-color: rgb(39, 109, 238);
+    padding: 1px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+#add-to-cart {
+    border: 2px solid rgb(39, 109, 238);
+    color: rgb(39, 109, 238);
+    background-color: white;
+    padding: 1px;
+    text-align: center;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+#add-to-watchlist {
+    border: 2px solid rgb(39, 109, 238);
+    color: rgb(39, 109, 238);
+    background-color: white;
+    padding: 1px;
+    text-align: center;
+    border-radius: 100px;
+}
+#popular-item {
+    background-color: rgb(235, 233, 233);
+    padding: 8px 24px;
+    margin-top: 30px;;
+    border-radius: 15px;
+}
