@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0px;
+}
+h1 {
+    text-align: center;
+    border-bottom: 0.5px solid black;
+    padding: 15px;
+    margin: 0px;
+    color: blue;
+}
+/* grid starts here */
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 60px 2fr 1fr 1fr;
+    margin-top: 15px;
+    margin: 0px 24px;
+    grid-template-areas:
+        ". c1 c2 c3 ." ;
+}
+#column-1 {
+    grid-area: c1;
+}
+#column-2 {
+    grid-area: c2;
+}
+#column-3 {
+    grid-area: c3;
+}
