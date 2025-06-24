@@ -7,15 +7,20 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>mebay</h1>
-        <h3>EXTRA 10% OFF 3+ ITEMS WITH CODE PIKA10OFF</h3>
+        <h1>
+            mebay!
+        </h1>
+        <h3 id="offer">
+            EXTRA <span id="red">10%</span> OFF 3+ ITEMS WITH CODE 
+            <span id="red">PIKA10OFF</span>
+        </h3>
         <div id="main-container">
             <div id="left-column-pictures">
-                <img 
+                <img id="front"
                     src="images/eevee-pokemoncard.webp" 
                     alt="Front of Eevee Pokemon card."
                 >
-                <img 
+                <img id="back"
                     src="images/eevee-pokemoncardback.webp" 
                     alt="Back of Pokemon card."
                 >
@@ -27,6 +32,27 @@
                 >
             </div>
             <div id="right-column-info">
+                <div id="seller">
+                    <div id="icon">
+                        <div id="image-container">
+                            <img
+                                src="images/icon.webp" 
+                                alt="Default icon picture"
+                            >
+                        </div>
+                        <h4>
+                            Labyrinth Singles 
+                            <span class="grey-text">(390)</span>
+                        </h4>
+                        <div id="links">
+                            <a href="#">99.6% positive</a>
+                            &middot;
+                            <a href="#">Seller's other items</a>
+                            &middot;
+                            <a href="#">Contact seller</a>
+                        </div>
+                    </div>
+                </div>
                 <div id="product-title">
                     <h3>
                         US SELLER - Eevee 078/066 Sv5a: Crimson Haze Holo 
@@ -38,17 +64,20 @@
                     Condition: <b>Ungraded - Near mint or better</b>
                 </p>
                 <p id="text2">
-                    Quantity: <span> 1 </span>2 available - 7 sold
+                    Quantity: <span id="quantity">1</span> 
+                    <span class="grey-text">2 available</span>
+                    &middot; 
+                    <span id="red">7 sold</span>
                 </p>
                 <div id="buttons">
                     <div id="buy-button">
-                        <p>Buy It Now</p>
+                        <p><a href="#">Buy It Now</a></p>
                     </div>
-                    <div id="add-to-cart">
-                        <p>Add to Cart</p>
+                    <div class="white-btn">
+                        <p><a href="#">Add to Cart</a></p>
                     </div>
-                    <div id="add-to-watchlist">
-                        <p>Add to Watchlist</p>
+                    <div class="white-btn">
+                        <p><a href="#">Add to Watchlist</a></p>
                     </div>
                 </div>
                 <div id="popular-item">
