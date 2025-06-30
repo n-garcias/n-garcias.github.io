@@ -25,10 +25,17 @@ img {
         left: 20%;
         bottom: 50%;
     }
+    h4 {
+        color: white;
+        position: absolute;
+        left: 20%;
+        bottom: 40%;
+    }
     a {
         color: white;
         text-decoration: none;
         font-size: 15px;
+        font-weight: bold;
         background-color: black;
         padding: 18px;
         border-radius: 15px;
@@ -46,12 +53,25 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
+    h1 {
+        color: white;
+        position: absolute;
+        top: 30%;
+        bottom: 50%;
+    }
+    h4 {
+        color: white;
+        position: absolute;
+        top: 40%;
+        bottom: 40%;
+    }
     a {
         color: white;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 15px;
+        font-weight: bold;
         background-color: rgb(36, 36, 96);
-        padding: 24px;
+        padding: 18px;
         border-radius: 15px;
         position: absolute;
     }
@@ -62,18 +82,31 @@ img {
     background-position: center center;
     height: 100vh;
     display: flex;
-    
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    h1 {
+        color: white;
+        position: absolute;
+        right: 20%;
+        bottom: 50%;
+    }
+    h4 {
+        color: white;
+        position: absolute;
+        right: 20%;
+        bottom: 40%;
+    }
     a {
         color: white;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 15px;
+        font-weight: bold;
         background-color: rgb(25, 70, 105);
-        padding: 24px;
+        padding: 18px;
         border-radius: 15px;
         position: absolute;
         right: 20%;
+        bottom: 30%;
     }
 }
