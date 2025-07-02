@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #fefefe;
+    color: #010101;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+}
+/* resets end */
+#hero-container {
+    background-image: url("../images/flower1.png");
+    background-size: cover;
+    height: 50dvh;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero-container h1 {
+    color: white;
+    text-shadow: 4px 2px 15px black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 24px;
+}
+#hero-container h4 a {
+    color: green;
+    background-color: #fefefe;
+    border: 2px solid #fefefe;
+    padding: 18px;
+    &:hover {
+        background-color: transparent;
+        text-shadow: 4px 2px 15px white;
+    }
+}
+#gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 24px;
+    gap: 24px;
+}
+#gallery-container img {
+    flex: 1;
+}
