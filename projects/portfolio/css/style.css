@@ -51,22 +51,28 @@ a {
     }
 }
 .nav-container {
-    width: 1000px;
+    position: fixed;
+    width: 90dvw;
+    max-width: 1000px;
     margin: 0px auto;
 }
 #pseudo-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
-    background-color: #010101;
     margin: 10px;
     padding: 15px;
+    background-color: #01010190;
+    backdrop-filter: blur(10px);
     a {
         color: white;
         font-family: "Pragati Narrow", sans-serif;
         font-size: 22px;
     }
+}
+#links-nav {
+    display: flex;
+    gap: 24px;
 }
 #gallery-container {
     display: flex;
@@ -79,8 +85,11 @@ a {
     }
 }
 #card-container {
+    max-width: 900px;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .card {
     flex: 1;
@@ -92,5 +101,14 @@ a {
     font-family: "Pragati Narrow";
     h2 {
         font-size: 35px;
+        margin: 20px;
+    }
+    a {
+        background-color: #010101;
+        padding: 8px;
+        color: #fefefe;
+        &:hover {
+            background-color: #302e2e;
+        }
     }
 }
