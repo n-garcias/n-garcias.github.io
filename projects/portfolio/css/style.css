@@ -78,7 +78,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 24px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 24px auto;
     img {
         height: 300px;
         flex: 1;
