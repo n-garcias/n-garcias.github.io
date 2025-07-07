@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Pragati+Narrow:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pragati+Narrow:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -33,18 +32,19 @@ a {
     h1 {
         position: absolute;
         font-family: "Arsenal SC", sans-serif;
-        font-size: 55px;
+        font-size: 75px;
         top: 50%;
         color: white;
         text-shadow: 4px 4px 15px black;
     }
     #button {
-        font-family: "Pragati Narrow", sans-serif;
+        font-family: "DM Sans", sans-serif;
         position: absolute;
         color: white;
+        font-size: 19px;
         top: 87%;
         background-color: #010101;
-        padding: 10px;
+        padding: 20px;
     }
     #button:hover {
         background-color: #1c1b1b;
@@ -60,13 +60,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px;
-    padding: 15px;
+    margin: 20px;
+    padding: 15px 20px;
     background-color: #01010190;
     backdrop-filter: blur(10px);
     a {
         color: white;
-        font-family: "Pragati Narrow", sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-size: 22px;
     }
 }
@@ -87,6 +87,7 @@ a {
     }
 }
 #card-container {
+    min-width: 600px;
     max-width: 900px;
     margin: 0px auto;
     display: flex;
@@ -95,12 +96,12 @@ a {
 }
 .card {
     flex: 1;
-    margin: 24px;
+    margin: 15px;
     background-color: #fefefe;
-    padding: 50px;
+    padding: 24px;
     text-align: center;
     color: #010101;
-    font-family: "Pragati Narrow";
+    font-family: "DM Sans", sans-serif;
     h2 {
         font-size: 35px;
         margin: 20px;
