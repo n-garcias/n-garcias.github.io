@@ -17,6 +17,8 @@ img {
 }
 
 .cards-container {
+    margin: 0px auto;
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
