@@ -16,23 +16,77 @@ img {
     text-align: center;
 }
 
-.cards-container {
+#layout {
     margin: 0px auto;
-    width: 800px;
+    width: 80%;
+}
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .card {
-    flex: 300px;
-    border: 3px solid black;
+    flex: 400px;
+    background-color: rgb(27, 27, 27);
+    color: white;
     margin: 24px;
     padding: 24px;
     border-radius: 12px;
     text-align: center;
 }
-
 .card img {
     width: 200px;
+}
+.card h4 {
+    font-size: 28px;
+}
+#card-1:hover {
+    background-color: rgb(105, 8, 8);
+    box-shadow: 4px 4px 4px rgb(14, 163, 0);
+    transform: translateY(-8px);
+}
+#card-1 {
+    transition: 
+        background-color 0.5s, 
+        box-shadow 0.5s, 
+        transform 0.5s
+    ;
+}
+#card-2 #content {
+    opacity: 0;
+}
+#card-2:hover {
+    box-shadow: inset 2px 2px 20px red;
+    transform: translateY(-8px);
+}
+#card-2:hover #content {
+    opacity: 1;
+    h4 {
+        color: red;
+        text-shadow: 2px 2px 20px red;
+    }
+}
+#card-2:hover {
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+#card-2:hover #content {
+    transition: opacity 0.5s;
+}
+#card-3:hover {
+    background-color: rgb(26, 26, 83);
+    transform: translateY(-8px);
+    img {
+        transform: scale(1.1);
+        margin: 10px;
+    }
+}
+#card-3:hover {
+    transition: background-color 0.5s, transform 0.5s;
+}
+#card-4:hover {
+    background-color: rgb(77, 12, 12);
+    transform: translateY(-10px);
+    box-shadow: inset 4px -4px 10px black;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
 }

@@ -34,7 +34,6 @@ img {
     background-color: lightcyan;
     box-shadow: 4px 4px 4px #003;
     transform: translateY(-8px);
-
 }
 #card-1 {
     transition: 
@@ -68,7 +67,7 @@ img {
 }
 #card-4:hover .card-content {
     opacity: 1;
-    visibility: hiddene;
+    visibility: hidden;
 }
 #card-5 {
     position: relative;
