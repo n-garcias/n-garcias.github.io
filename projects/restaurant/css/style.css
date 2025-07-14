@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* resets end */
+#navbar {
+    background-color: #051F3E;
+    padding: 15px;
+    font-family: "Mukta", sans-serif;
+    font-weight: bold;
+}
+#navbar #logo {
+    width: 125px;
+}
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 800px;
+    margin: 0px auto;
+}
+#navbar-links {
+    display: flex;
+    gap: 20px;
+    a {
+        color: white;
+    }
+}
+#order-btn {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    a {
+        color: #C12026;
+    }
+}
+#header-container {
+    display: grid;
+    grid-template-columns: 
+        ". img-area";
+    height: 100vh;
+    position: relative;
+}
+#header-container .ic {
+    grid-area: image-area;
+    background-image: url("../images/hero-1.jpg");
+    background-size: cover;
+}
