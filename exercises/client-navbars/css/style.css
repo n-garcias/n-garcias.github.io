@@ -65,7 +65,8 @@ a {
     background-color: purple;
 }
 #top {
-
+    text-align: center;
+    padding: 15px;
     background-color: black;
     a {
         color: rgb(133, 209, 19);
@@ -81,6 +82,7 @@ a {
     }
 }
 #bttm {
+    font-weight: bold;
     display: flex;
     justify-content: center;
     padding: 15px;
