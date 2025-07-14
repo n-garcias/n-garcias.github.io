@@ -17,7 +17,6 @@ a {
 #navbar {
     background-color: rgb(85, 175, 142);
     margin-bottom: 0px;
-    padding: 18px;
 }
 #nav-container {
     width: 100vw;
@@ -27,7 +26,12 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-#logo {
+#nav-container a {
+    display: inline-block;
+    padding: 20px 0px;
+}
+#nav-container #logo {
+    padding: 0px;
     font-size: 24px;
     font-family: "Berkshire Swash", sans-serif;
 }
@@ -42,6 +46,35 @@ a {
     font-weight: 500;
     display: flex;
     gap: 24px;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.25s,
+        visibility 0.25s;
+    z-index: 10;
+}
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+#nav-container .dropdown-menu a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #55af8e;
+    width: 100%;
+    min-width: 200px;
+}
+#navbar .dropdown-menu a:hover {
+    background: #439476;
 }
 #hero {
     margin-top: 0px;
@@ -69,7 +102,7 @@ a {
     color: white;
     text-shadow: 2px 2px 5px black;
 }
-#hero a {
+#hero #herobtn {
     position: absolute;
     left: 10%;
     bottom: 30%;
@@ -92,7 +125,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     a {
         text-decoration: underline;
         &:hover {
@@ -149,14 +181,16 @@ a {
     max-width: 900px;
 }
 #prince-container {
+    min-height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 .adoption-card {
     max-width: 500px;
     background-color: #CE7DA5;
     border-radius: 15px;
-    margin: 50px;;
+    margin: 50px;
     h2 {
         margin: 0px;
         font-size: 25px;
@@ -169,7 +203,7 @@ a {
     img {
         border-radius: 15px 15px 0px 0px;
         height: 400px;
-        object-position: center center;
+        object-position: top center;
     }
 }
 #content {
@@ -184,4 +218,22 @@ a {
     box-shadow: 2px 2px 10px #aeaeae;
     transform: translateY(-8px);
     transition: box-shadow 0.5s, transform 0.5s;
+}
+#footer {
+    background-color: #55af8e;
+    padding: 20px;
+    span {
+        font-family: "Berkshire Swash", serif;
+    }
+}
+#footer-navbar {
+    width: 900px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-links {
+    font-family: "Lora";
+    display: flex;
+    gap: 15px;
 }
