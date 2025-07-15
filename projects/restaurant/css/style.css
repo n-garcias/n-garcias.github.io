@@ -4,7 +4,7 @@
 }
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Mukta", sans-serif;
 }
 img {
     width: 100%;
@@ -16,9 +16,11 @@ a {
 }
 /* resets end */
 #navbar {
+    top: 0px;
+    position: sticky;
+    z-index: 2;
     background-color: #051F3E;
     padding: 15px;
-    font-family: "Mukta", sans-serif;
     font-weight: bold;
 }
 #navbar #logo {
@@ -28,8 +30,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    max-width: 800px;
+    width: 100dvh;
+    max-width: 5000px;
     margin: 0px auto;
 }
 #navbar-links {
@@ -37,7 +39,11 @@ a {
     gap: 20px;
     a {
         color: white;
+        transition: color 0.5s;
     }
+}
+#navbar a:hover {
+    color: #C12026;
 }
 #order-btn {
     background-color: white;
@@ -47,15 +53,177 @@ a {
         color: #C12026;
     }
 }
+#order-btn:hover {
+    background-color: #e2e2e2;
+}
+#promo {
+    display: flex;
+    justify-content: center;
+    background-color: #C12026;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    p {
+        margin: 0px;
+    }
+}
 #header-container {
-    display: grid;
-    grid-template-columns: 
-        ". img-area";
-    height: 100vh;
+    background-image: url(../images/hero-1.jpg);
+    height: 50dvh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
     position: relative;
 }
-#header-container .ic {
-    grid-area: image-area;
-    background-image: url("../images/hero-1.jpg");
+#header-container h1 {
+    position: absolute;
+    margin: 0px;
+    top: 30%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+#header-container h4 {
+    position: absolute;
+    margin: 0px;
+    top: 47%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+#menu-btn {
+    position: absolute;
+    background-color: #60BB46;
+    box-shadow: 2px 2px 15px black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    top: 60%;
+    left: 10%;
+}
+#menu-btn:hover {
+    background-color: #429f29;
+    transform: translateY(-4px);
+    transition: background-color 0.5s, transform 0.5s;
+}
+#card-layout {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0px auto;
+    h2 {
+        font-family: "Mukta", sans-serif;
+        text-align: center;
+    }
+}
+#cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 24px;
+    gap: 24px;
+}
+.cards {
+    max-width: 300px;
+    flex: 1;
+    padding: 20px 15px;
+    background-color: #C12026;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+.cards img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+.cards:hover {
+    box-shadow: 2px 2px 10px #a9a9a9;
+    transform: translateY(-4px);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+#third-section {
+    font-family: "Mukta", sans-serif;
+}
+#header2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img-area";
+    height: 50vh;
+    position: relative;
+    background-color: #FEE890;
+    margin-top: 24px;
+}
+#header2-container #img-container {
+    grid-area: img-area;
+    background-image: url(../images/catering.jpg);
     background-size: cover;
+}
+#header2-container #content-container {
+    position: absolute;
+    width: 90%;
+    max-width: 1290px;
+    top: 30%;
+    left: 60%;
+    transform: translateY(-50%), translateX(-50%);
+}
+#header2-container #content-container div {
+    max-width: 40%;
+}
+#content-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+#learn-more {
+    background-color: #C12026;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100dvh;
+    max-width: 5000px;
+    margin: 0px auto;
+    color: white;
+    font-family: "Mukta", sans-serif;
+    p {
+        font-weight: bold;
+    }
+}
+#footer-links {
+    display: flex;
+    gap: 15px;
+    font-family: "Mukta", sans-serif;
+}
+#footer-links a {
+    color: white;
+}
+#footer {
+    background-color: #051F3E;
+}
+#menu {
+    min-width: 600px;
+    max-width: 1200px;
+    width: 50%;
+    margin: 0px auto;
+}
+#title {
+    text-align: center;
+}
+#featured-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #60BB46;
+    border-radius: 25px;
+    margin: 24px;
+}
+#featured-card img {
+    width: 300px;
+    border-radius: 25px 0px 0px 25px;
 }
