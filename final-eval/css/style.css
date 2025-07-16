@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Patua+One&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    color: #eeecec;
+    background: linear-gradient(to right, #203731, #004C54);
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+#page-layout {
+    width:50%;
+    min-width: 450px;
+    margin: 0px auto;
+}
+#event-container {
+    margin: 24px;
+    padding: 24px;
+}
+.center-content {
+    text-align: center;
+    margin: 50px;
+    h1 {
+        margin: 0px;
+        font-size: 50px;
+        font-family: "Patua One", serif;
+    }
+    h2 {
+        margin: 0px;
+        font-size: 30px;
+    }
+    img {
+        width: 100px;
+    }
+}
+#teams-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #c00a0a;
+    box-shadow: 2px 2px 10px rgb(42, 41, 41);
+}
+.card {
+    font-family: "Patua One";
+    font-size: 20px;
+    img {
+        width: 100%;
+        padding: 24px;
+    }
+}
+#packers {
+    h2 {
+        color: #ea0c0c;
+    }
+}
+#middle {
+    font-family: "Patua One";
+    font-size: 100%;
+    color: #ea0c0c;
+}
+#eagles {
+    h2 {
+        color: #ea0c0c;
+    }
+}
+#buttons-container {
+    text-align: center;
+padding: 24px;
+}
+#buttons-container a {
+    padding: 25px;
+    margin: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+#yes {
+    background-color: white;
+    color: #cf1717;
+}
+#yes:hover {
+    background-color: rgb(213, 213, 213);
+    text-decoration: underline;
+}
+#no {
+    background-color: #cf1717;
+    color: white;
+}
+#no:hover {
+    background-color: #a40404;
+    text-decoration: underline;
+}
+#footer {
+    text-align: center;
+    margin: 24px;
+}
+@media screen and (max-width: 950px) and (min-width: 450px) {
+    .center-content {
+        text-align: center;
+        h1 {
+            font-size: 38px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        img {
+            width: 60px;
+        }
+    }
+    .center-content h3 {
+        font-size: 18px;
+    }
+    .center-content h4 {
+        font-size: 15px;
+    }
+    .card {
+        img {
+            padding: 10px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+    }
+}
