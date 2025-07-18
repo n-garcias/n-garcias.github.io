@@ -227,7 +227,6 @@ a {
     }
 }
 #footer-navbar {
-    width: 900px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -236,4 +235,27 @@ a {
     font-family: "Lora";
     display: flex;
     gap: 15px;
+}
+@media screen and (max-width: 750px) {
+    #nav-container {
+        flex-direction: column;
+    }
+    #nav-container #logo {
+        font-size: 30px;
+        margin: 10px;
+    }
+    #signup-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+    #footer-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-links {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
 }
