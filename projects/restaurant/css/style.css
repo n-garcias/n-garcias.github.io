@@ -108,11 +108,10 @@ a {
     transition: background-color 0.5s, transform 0.5s;
 }
 #card-layout {
-    min-width: 600px;
     margin: 0px auto;
+    text-align: center;
     h2 {
         font-family: "Mukta", sans-serif;
-        text-align: center;
     }
 }
 #new-menu {
@@ -123,10 +122,9 @@ a {
 }
 #cards-container {
     display: grid;
-    grid-template-columns: max-content max-content max-content ;
+    grid-template-columns: max-content max-content max-content max-content;
     grid-template-areas: 
-        "c1 c2 c3"
-        ". c4 .";
+        "c1 c2 c3 c4";
     margin: 24px;
     justify-content: center;
 }
@@ -289,6 +287,7 @@ a {
     }
     #new-menu {
         padding: 0px;
+        min-width: auto;
     }
     #cards-container {
         align-items: center;
@@ -316,5 +315,119 @@ a {
     }
     #desserts {
         grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px) {
+    #navbar-container {
+        flex-direction: column;
+    }
+    #navbar-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #new-menu {
+        padding: 0px;
+    }
+    #promo {
+        font-size: 13px;
+        text-align: center;
+    }
+    #hero {
+        justify-content: center;
+    }
+    #header-container {
+        text-align: center;
+        h1 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 13px;
+        }
+        #header-content #menu-btn {
+            font-size: 13px;
+            display: inline-block;
+            margin: 24px;
+        }
+    }
+    #card-layout h2 {
+        text-align: center;
+        padding: 0px;
+        font-size: 15px;
+    }
+    #card-layout img {
+        width: 200px;
+        height: 200px;
+    }
+    #cards-container {
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: max-content;
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3"
+            "c4";
+    }
+    #content-container {
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 13px;
+        }
+        a {
+            font-size: 12px;
+        }
+    }
+    #footer-container {
+        flex-direction: column;
+    }
+    #footer-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px;
+    }
+    #menu {
+        min-width: auto;
+        width: auto;
+    }
+    #featured-dish {
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 15px;
+    }
+    .featured-card .featured-content {
+        h4 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    #appetizers {
+        grid-template-columns: 1fr;
+    }
+    #menu-container {
+        grid-template-columns: 1fr;
+    }
+    .menu-cards {
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    #sides {
+        grid-template-columns: 1fr;
+    }
+    #menu-container {
+        grid-template-columns: 1fr;
+    }
+    #desserts {
+        grid-template-columns: 1fr;
+        
     }
 }
